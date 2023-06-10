@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    padding: 0rem;
+    /* height: 100vh; */
+}
+
+span {
+    margin: auto 1rem;
+}
+
+.flex-mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+
+    background: #F99B7D;
+    background: linear-gradient(to right, rgb(0, 4, 40, 0.5), rgb(0, 78, 146, 0.5)), url('../assets/left-background.jpg');
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.left-section {
+    flex: 70%;
+    flex-direction: column;
+    gap: 20.7rem;
+    padding: 1rem;
+
+    /* background: linear-gradient(to right, rgb(0, 4, 40, 0.5), rgb(0, 78, 146, 0.5)), url('../assets/left-background.jpg'); */
+
+    /* background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.3) -53.1%, rgba(255, 221, 136, 0.1) 49%), url('../assets/left-background.jpg'); */
+    background-size: cover;
+
+    box-sizing: border-box;
+    /* height: 100vh; */
+}
+
+.form {
+    width: 100%;
+    flex-direction: column;
+    gap: 3rem;
+
+    margin-top: 10rem;
+}
+
+.city-input {
+    width: 60%;
+    /* height: 1rem; */
+    padding: 1.3rem 1.5rem;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(255, 231, 206, 0.8);
+}
+
+
+.form-btn {
+    width: 30%;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    color: azure;
+}
+
+.form-btn:hover {
+    color: rgb(31, 29, 29);
+    background-color: #FFF4F4;
+}
+
+.contact-details {
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.contact-icon-wrapper {
+    display: flex;
+    gap: 2rem;
+}
+
+.contact-icon {
+    color: #E3F4F4;
+}
+
+.right-section {
+    flex: 30%;
+    /* height: 100vh; */
+    /* background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.9) -53.1%, rgba(255, 221, 136, 0.3) 49%), url('../assets/right-background.jpg'); */
+    padding: 2rem 3rem;
+    background-size: contain;
+    /* width: 100%; */
+
+    /* border: 1px solid; */
+}
+
+.report-wrapper {
+    border: 2px solid #E3F4F4;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: rgba(241, 241, 241, 0.5) 0px 6px 12px -2px, rgba(250, 143, 143, 0.3) 0px 3px 7px -3px;
+    flex-direction: column;
+    /* gap: 2rem */
+}
+
+.report {
+    flex: 95%;
+    gap: 1.2rem;
+    flex-direction: column;
+
+    font-family: 'Bree Serif', serif;
+    font-size: 1.2rem;
+}
+
+.basic-info {
+    flex-direction: column;
+    /* gap: 2rem; */
+    flex: 50%;
+    color: #E3F4F4;
+    padding: 2rem 0 0 0;
+
+    /* border: 1px solid; */
+}
+
+.basic-info>* {
+    /* border: 1px solid; */
+    text-align: center;
+    flex: 15%;
+}
+
+.temparature {
+    flex: 40% !important;
+    font-size: 2rem;
+}
+
+.cloud-humid-info {
+    flex: 25%;
+    width: 100%;
+    /* gap: 2rem; */
+    background-color: rgb(212, 236, 221, 0.7);
+    border-radius: 1rem;
+
+    border: 1px solid;
+}
+
+.cloud-humid-info>* {
+    flex: 1;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.wind-info {
+    flex: 25%;
+    width: 100%;
+    display: flex;
+    /* gap: 2rem; */
+    background-color: #8fafb9;
+    border-radius: 1rem;
+
+    border: 1px solid;
+}
+
+.wind-info>* {
+    /* flex: 50%; */
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box;
+
+    /* border: 1px solid; */
+}
+
+.modal-wrapper {
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+    background-color: black;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    padding: 3rem 8rem;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: rgb(255, 253, 141, 0.9);
+    font-size: 1.3rem;
+    border: 2px solid white;
+
+    z-index: 10;
+}
+
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+
+    height: 100vh;
+    width: 100rem;
+    backdrop-filter: blur(5px);
+}

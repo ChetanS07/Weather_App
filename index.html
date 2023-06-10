@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="index.js" type="text/javascript"></script>
+    <link href="styles/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left-section flex-mid">
+            <form class="form flex-mid" novalidate>
+                <input type="text" class="city-input" placeholder="Enter City Name" name="cityName" required>
+                <button type="submit" class="form-btn">Get Weather</button>
+            </form>
+            <div class="contact-details">
+
+                <div class="contact-icon-wrapper">
+                    <a target="_blank" href="https://twitter.com/ChetanShetter" class="contact-icon">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/chetan_shetter/" class="contact-icon">
+                        <i class="fa fa-instagram fa-2x"></i>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/chennabasappa-g-shetter-25a5b4227/"
+                        class="contact-icon">
+                        <i class="fa fa-linkedin fa-2x"></i>
+                    </a>
+                    <a target="_blank" href="https://github.com/ChetanS07" class="contact-icon">
+                        <i class="fa fa-github fa-2x"></i>
+                    </a>
+                    <a target="_blank" href="" class="contact-icon">
+                        <i class="fa fa-youtube fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="report-wrapper flex-mid">
+                <h2
+                    style="margin: 0;padding : 0 2rem;color: black;background-color: rgb(211, 228, 243);border-radius: 0rem;font-size: 1.3rem; flex: 5%;">
+                    Weather Report
+                </h2>
+                <div class="report flex-mid">
+                    <article class="basic-info flex-mid">
+                        <div><i class="fa fa-map-marker fa-1x"></i> <span class="cityName">Location</span></div>
+                        <div><i class="fa fa-calendar fa-1x"></i><span class="date">date</span></div>
+                        <div class="temparature flex-mid"><span class="temp">24</span>
+                            <i class="fa fa-circle-o"
+                                style="font-size: .7rem;margin-right: 5px;margin-bottom: 10px;"></i>C
+                        </div>
+                        <div><span class="tempLow">Low</span>/<span class="tempHigh">High</span>| feels like:<span
+                                class="tempFeel">Temp</span></div>
+                        <div><span class="weatherType">Weather</span></div>
+                    </article>
+                    <div class="cloud-humid-info flex-mid">
+                        <div class="cloud flex-mid"><i class="fa fa-cloud fa-2x"></i><span class="cloudPer">Cloud</span>
+                            %
+                        </div>
+                        <div class="humid flex-mid"><i class="fa fa-tint fa-2x"></i><span
+                                class="humidity">Humidity</span> %
+                        </div>
+                    </div>
+                    <div class="wind-info flex-mid">
+                        <div class="wind-speed flex-mid"><i class="fa fa-random fa-2x"></i><span class="windSpeed">Wind
+                                Speed</span>mph
+                        </div>
+                        <div class="wind-direction flex-mid"><i class="fa fa-compass fa-2x"></i><span
+                                class="windDir">Direction</span> <i class="fa fa-circle-o"
+                                style="font-size: .7rem;margin-right: 5px;margin-bottom: 10px;"></i>N
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-wrapper" style="display: none;">
+        <div class=" blur"></div>
+        <div class="modal">
+            <i class="fa fa-spinner fa-2x"></i>
+            <p>Please Wait fetching report...</p>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
