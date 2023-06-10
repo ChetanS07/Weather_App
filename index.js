@@ -1,4 +1,4 @@
-const API_KEY = "ufHaF77YYK3cy25ky2zIqQ==Xa2EZjbRPAcevBOcfdsaddasdasdasd"
+const API_KEY = "{API KEY HERE}"
 
 let form = document.querySelector('.form');
 
