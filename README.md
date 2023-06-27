@@ -28,4 +28,4 @@ To use the Weather App, follow these steps:
 
 ## Link of Website
 Please check out if you want to look how website look,
-website hosted at, https://chetansprojectsweather.netlify.app/
+website hosted at, https://csprojectsweather.netlify.app/
