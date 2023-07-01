@@ -7,7 +7,7 @@ let cloudy = "<i class=\"fa fa-cloud fa-2x\" style=\"margin-right:1rem\"></i>"
 
 const populateElements = (data, city) => {
 
-    console.log(data);
+    // console.log(data);
     const date = new Date().toGMTString('en-IN');
     document.querySelector('.cityName').innerText = city;
     document.querySelector('.date').innerText = date;
